@@ -1,0 +1,20 @@
+﻿<div>
+    <a routerLink="role-create" class="nav-link btn btn-success">Добавить</a>
+</div>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <td>Роль</td>
+            <td></td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let r of roles">
+            <td><a [routerLink]="['role', r.id]" class="nav-link">{{r?.name}}</a></td>
+            <td>
+                <a [routerLink]="['role-edit', r.id]" class="btn btn-sm btn-primary">Изменить</a>
+                <button class="btn btn-sm btn-danger" (click)="delete(r.id)">Удалить</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

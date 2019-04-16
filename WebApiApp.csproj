@@ -1,0 +1,59 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <TypeScriptToolsVersion>3.3</TypeScriptToolsVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="ClientApp\app\app.component.ts" />
+    <None Remove="ClientApp\app\app.module.ts" />
+    <None Remove="ClientApp\app\common\not-found.component.ts" />
+    <None Remove="ClientApp\app\data.service.ts" />
+    <None Remove="ClientApp\app\role\data.service.ts" />
+    <None Remove="ClientApp\app\role\role-create.component.ts" />
+    <None Remove="ClientApp\app\role\role-detail.component.ts" />
+    <None Remove="ClientApp\app\role\role-edit.component.ts" />
+    <None Remove="ClientApp\app\role\role-form.component.ts" />
+    <None Remove="ClientApp\app\role\role-list.component.ts" />
+    <None Remove="ClientApp\app\role\role.ts" />
+    <None Remove="ClientApp\app\user.ts" />
+    <None Remove="ClientApp\app\user\user-create.component.ts" />
+    <None Remove="ClientApp\app\user\user-edit.component.ts" />
+    <None Remove="ClientApp\app\user\user-form.component.ts" />
+    <None Remove="ClientApp\app\user\user-list.component.ts" />
+    <None Remove="ClientApp\main.ts" />
+    <None Remove="ClientApp\polyfills.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="8.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.9" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="ClientApp\app\app.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\app.module.ts" />
+    <TypeScriptCompile Include="ClientApp\app\common\home.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\common\not-found.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\role\data.service.ts" />
+    <TypeScriptCompile Include="ClientApp\app\role\role-list.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\role\role.ts" />
+    <TypeScriptCompile Include="ClientApp\app\role\role-create.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\role\role-detail.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\role\role-edit.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\role\role-form.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\user\data.service.ts" />
+    <TypeScriptCompile Include="ClientApp\app\user\user-create.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\user\user-edit.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\user\user-form.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\user\user-list.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\user\user-detail.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\user\user.ts" />
+    <TypeScriptCompile Include="ClientApp\main.ts" />
+    <TypeScriptCompile Include="ClientApp\polyfills.ts" />
+  </ItemGroup>
+
+</Project>

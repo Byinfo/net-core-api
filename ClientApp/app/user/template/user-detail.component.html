@@ -1,0 +1,9 @@
+﻿<div *ngIf="loaded">
+    <h2>Пользователь {{user.id}}</h2>
+    <div>
+        <p><b>Имя Фамилия:</b> {{user.name}}</p>
+        <p><b>Возраст:</b> {{user.age}}</p>
+        <p><b>Email:</b> {{user.email}}</p>
+        <p><a routerLink="/" class="nav-link">К списку пользователей</a></p>
+    </div>
+</div>

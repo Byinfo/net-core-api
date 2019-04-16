@@ -1,0 +1,8 @@
+﻿<div>
+    <h2>Добавление новой роли</h2>
+    <role-form [(role)]="role"></role-form>
+    <div class="form-group">
+        <input type="button" value="Сохранить" (click)="save()" class="btn btn-success" />
+        <a routerLink="/" class="btn btn-warning">Отмена</a>
+    </div>
+</div>
